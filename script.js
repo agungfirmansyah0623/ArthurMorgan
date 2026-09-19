@@ -1,54 +1,56 @@
+
 /* ============ ISI HALAMAN: ubah bagian ini saja ============ */
+const BUKA_PADA  = "2026-09-19T08:00:00+07:00"; /* web baru bisa dibuka mulai waktu ini. Kosongkan ("") jika tidak dipakai */
+const TUTUP_PADA = "";                            /* opsional: web tertutup lagi setelah waktu ini. Contoh: "2026-09-27T17:00:00+07:00" */
+const INTRO_DETIK = 10; /* lama hitung mundur (detik). Isi 0 untuk mematikan */
+document.documentElement.classList.add("js");
 const GROUP = {
   name: "Kelompok 7",
-  tagline: [
-    "GA SOMBONG GA AROGAN",
-    "ARTHUR MORGAN!!!",
-  ],
+  marquee: ["Kelompok 7", "LKMM Unand",  "Hidup FTI", "Informatika", "Sistem Informasi", "Teknologi Komputer" ],
+  tagline: "GA SOMBONG GA AROGAN, ARTHUR MORGAN",
   about: [
-    "Kelompok ini dibentuk karena kegiatan LKMM yang ada di Fakultas Teknologi Informasi. Di halaman ini kamu bisa mengenal anggota, melihat dokumentasi kegiatan, dan mengikuti akun kami.",
-    "Dengan segala keterbatasan kami selalu kompak dan aktif dalam berbagai kegiatan yang di adakan oleh acara LKMM tersebut, kami berharap LKMM ini membuat kami sebagai mahasiswa lebih percaya diri berbicara dan mengambil keputusan, lebih terampil mengatur waktu, tim, dan program kerja, serta lebih peduli pada lingkungan kampus dan masyarakat. Kami juga ingin membawa ilmu dari LKMM ke organisasi masing-masing, sehingga manfaatnya terasa lebih luas dan bertahan lama.."
+    "Kami kelompok yang dibentuk untuk mengerjakan proyek bersama, dari ide awal sampai hasil akhir. Di halaman ini kamu bisa mengenal ANGGOTA, melihat dokumentasi kegiatan, dan mengikuti akun kami.",
+    "Tulis di sini cerita singkat tentang bagaimana kelompok ini terbentuk, apa yang sedang dikerjakan, dan apa yang ingin dicapai."
   ],
   facts: [
-    ["MENTOR", "UDA & UNI"],
-    ["Anggota", "16 ORANG"],
+    ["Mentor", "UDA & UNI"]
+    ["ANGGOTA", "16 orang"],
     ["Terbentuk", "2026"],
-    ["Kegiatan", "KELOMPOK 7 LKMM"],
-    ["Asal", "  UNIVERSITAS ANDALAS"]
+    ["Kegiatan", "KEGIATAN LKMM"],
+    ["Asal", "UNIVERSITAS ANDALAS"]
   ],
   members: [
-    { name: "Nama Mentor  ", role: "UDA", bio: "Tulis bio singkat di sini.", handle: "FADIL ABISALI" },
-    { name: "Nama Mentor  ", role: "UNI", bio: "Tulis bio singkat di sini.", handle: "RAYYA" },
-    { name: "Nama Anggota ", role: "KETUA", bio: "Tulis bio singkat di sini.", handle: "AGUNG FIRMANSYAH" },
-    { name: "Nama Anggota ", role: "PDD", bio: "Tulis bio singkat di sini.", handle: "NAILAHUSNA" },
-    { name: "Nama Anggota ", role: "PDD", bio: "Tulis bio singkat di sini.", handle: "SITI AZIZI RAHIMA" },
-    { name: "Nama Anggota ", role: "ANGGOTA", bio: "Tulis bio singkat di sini.", handle: "SABIRIL RAUF" },
-    { name: "Nama Anggota ", role: "ANGGOTA", bio: "Tulis bio singkat di sini.", handle: "AFIF QASIM AL GHIFARI" },
-    { name: "Nama Anggota ", role: "ANGGOTA", bio: "Tulis bio singkat di sini.", handle: "M. FADLAN MALIK" },
-    { name: "Nama Anggota ", role: "ANGGOTA", bio: "Tulis bio singkat di sini.", handle: "NUR HAFIJA PANJAITAN" },
-    { name: "Nama Anggota ", role: "ANGGOTA", bio: "Tulis bio singkat di sini.", handle: "ADRYAN AKBAR" },
-    { name: "Nama Anggota ", role: "ANGGOTA", bio: "Tulis bio singkat di sini.", handle: "FAJRIL ATTHAR RAHMAN" },
-    { name: "Nama Anggota ", role: "ANGGOTA", bio: "Tulis bio singkat di sini.", handle: "AURA AULIA ZULFI" },
-    { name: "Nama Anggota ", role: "Anggota", bio: "Tulis bio singkat di sini.", handle: "IBNU ZABDI AL FARUQI" },
-    { name: "Nama Anggota ", role: "Anggota", bio: "Tulis bio singkat di sini.", handle: "ACHMAD LEDO KAUTSAR ERWINSYAH" },
-    { name: "Nama Anggota ", role: "Anggota", bio: "Tulis bio singkat di sini.", handle: "ALEA DAGNA ANINDYA" },
-    { name: "Nama Anggota ", role: "Anggota", bio: "Tulis bio singkat di sini.", handle: "ASIYAH SHAHIRA DELHAN" },
-    { name: "Nama Anggota ", role: "Anggota", bio: "Tulis bio singkat di sini.", handle: "HAVIS LUTFI" },
-    { name: "Nama Anggota ", role: "Anggota", bio: "Tulis bio singkat di sini.", handle: "CLAUDYA ANNISA" }
-  
+    { name: "NAMA MENTOR  ", role: "MENTOR",  bio: "Tulis bio singkat di sini.", handle: "FADIL ABISALI" },
+    { name: "NAMA MENTOR  ", role: "MENTOR",  bio: "Tulis bio singkat di sini.", handle: "RAYYA" },
+    { name: "NAMA KETUA   ", role: "KETUA",   bio: "Tulis bio singkat di sini.", handle: "AGUNG FIRMANSYAH" },
+    { name: "NAMA PDD     ", role: "PDD",     bio: "Tulis bio singkat di sini.", handle: "NAILAHUSNA" },
+    { name: "NAMA PDD     ", role: "PDD",     bio: "Tulis bio singkat di sini.", handle: "SITI AZIZI RAHIMA" },
+    { name: "NAMA ANGGOTA ", role: "ANGGOTA", bio: "Tulis bio singkat di sini.", handle: "SABIRIL RAUF" },
+    { name: "NAMA ANGGOTA ", role: "ANGGOTA", bio: "Tulis bio singkat di sini.", handle: "HAVIS LUTFI" },
+    { name: "NAMA ANGGOTA ", role: "ANGGOTA", bio: "Tulis bio singkat di sini.", handle: "AFIF QASIM AL GHIFARI" },
+    { name: "NAMA ANGGOTA ", role: "ANGGOTA", bio: "Tulis bio singkat di sini.", handle: "M. FADLAN MALIK" },
+    { name: "NAMA ANGGOTA ", role: "ANGGOTA", bio: "Tulis bio singkat di sini.", handle: "NUR HAFIJA PANJAITAN" },
+    { name: "NAMA ANGGOTA ", role: "ANGGOTA", bio: "Tulis bio singkat di sini.", handle: "ADRYAN AKBAR" },
+    { name: "NAMA ANGGOTA ", role: "ANGGOTA", bio: "Tulis bio singkat di sini.", handle: "FAJRIL ATTHAR RAHMAN" },
+    { name: "NAMA ANGGOTA ", role: "ANGGOTA", bio: "Tulis bio singkat di sini.", handle: "AURA AULIA ZULFI" },
+    { name: "NAMA ANGGOTA ", role: "ANGGOTA", bio: "Tulis bio singkat di sini.", handle: "IBNU ZABDI AL FARUQI" },
+    { name: "NAMA ANGGOTA ", role: "ANGGOTA", bio: "Tulis bio singkat di sini.", handle: "ACHMAD LEDO KAUTSAR ERWINSYAH" },
+    { name: "NAMA ANGGOTA ", role: "ANGGOTA", bio: "Tulis bio singkat di sini.", handle: "ALEA DAGNA ANINDYA" },
+    { name: "NAMA ANGGOTA ", role: "ANGGOTA", bio: "Tulis bio singkat di sini.", handle: "ASIYAH SHAHIRA DELHAN" },
+    { name: "NAMA ANGGOTA ", role: "ANGGOTA", bio: "Tulis bio singkat di sini.", handle: "CLAUDYA ANNISA" },
   ],
   gallery: [
-    { cap: "KEGIATAN", w: 800, h: 600, photo: "foto/foto1.jpeg" },
-    { cap: "KEGIATAN", w: 800, h: 600, photo: "foto/foto2.jpeg" },
-    { cap: "KEGIATAN", w: 800, h: 600, photo: "foto/foto3.jpeg" },
-    { cap: "KEGIATAN", w: 800, h: 600, photo: "foto/foto4.jpeg" },
-    { cap: "KEGIATAN", w: 800, h: 600, photo: "foto/foto_profil.png" },
-    { cap: "KEGIATAN", w: 800, h: 600, photo: "foto/foto5.jpeg" },
-    { cap: "KEGIATAN", w: 800, h: 600, photo: "foto/foto6.jpeg" },
-    { cap: "KEGIATAN", w: 800, h: 600, photo: "foto/foto7.jpeg" }
+    { cap: "Rapat pertama", w: 800, h: 600, photo: "foto/foto1.jpeg" },
+    { cap: "Kerja bareng", w: 800, h: 600, photo: "foto/foto2.jpeg" },
+    { cap: "Makan-makan", w: 800, h: 600, photo: "foto/foto3.jpeg" },
+    { cap: "Foto tim", w: 800, h: 600, photo: "foto/foto4.jpeg" },
+    { cap: "Presentasi", w: 800, h: 600, photo: "foto/foto_profil.png" },
+    { cap: "Survei lokasi", w: 800, h: 600, photo: "foto/foto5.jpeg" },
+    { cap: "Latihan", w: 800, h: 600, photo: "foto/foto6.jpeg" },
+    { cap: "Hari terakhir", w: 800, h: 600, photo: "foto/foto7.jpeg" }
   ],
   social: [
-    { platform: "Instagram", handle: "7.arthurmorgan", url: "https://www.instagram.com/7.arthurmorgan/?utm_source=ig_web_button_share_sheet" }
+    { platform: "Instagram", handle: "@7.arthurmorgan", url: "https://www.instagram.com/7.arthurmorgan/?utm_source=ig_web_button_share_sheet" },
   ]
 };
 /* ============================================================ */
@@ -68,7 +70,7 @@ function sceneArt(i, w, h){
 }
 function esc(s){ const d = document.createElement("div"); d.textContent = s; return d.innerHTML; }
 
-/* nama & tagline */
+/* NAMA & tagline */
 document.title = GROUP.name;
 ["brandName","heroName","footName"].forEach(id => document.getElementById(id).textContent = GROUP.name);
 document.getElementById("heroTagline").textContent = GROUP.tagline;
@@ -83,7 +85,7 @@ document.getElementById("heroStack").innerHTML = [0,2,4].map(i => {
 document.getElementById("aboutText").innerHTML = GROUP.about.map(t => `<p>${esc(t)}</p>`).join("");
 document.getElementById("facts").innerHTML = GROUP.facts.map(f => `<li><span>${esc(f[0])}</span><strong>${esc(f[1])}</strong></li>`).join("");
 
-/* anggota */
+/* ANGGOTA */
 document.getElementById("memberGrid").innerHTML = GROUP.members.map((m, i) => `
   <article class="member">
     <div class="initial" aria-hidden="true" style="background:${PALETTES[i % PALETTES.length][1]}">${esc(m.name.trim().charAt(0).toUpperCase())}</div>
@@ -159,3 +161,146 @@ document.getElementById("socialList").innerHTML = GROUP.social.map(s => {
   const ext = /^https?:/.test(s.url);
   return `<li><a href="${esc(s.url)}"${ext ? ' target="_blank" rel="noopener noreferrer"' : ''}><span class="plat">${esc(s.platform)}</span><span class="hnd">${esc(s.handle)}</span><span class="go">Buka</span></a></li>`;
 }).join("");
+
+
+/* ============ ANIMASI ============ */
+const reduceMotion = matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+/* 1. teks berjalan */
+(function(){
+  const items = GROUP.marquee || [GROUP.name];
+  const one = items.map(t => `<span>${esc(t)}</span><span>\u2726</span>`).join("");
+  document.getElementById("marqueeTrack").innerHTML = one + one;
+})();
+
+if (!reduceMotion) {
+  /* 2. judul: huruf naik satu-satu */
+  const h1 = document.getElementById("heroName");
+  const txt = h1.textContent;
+  h1.setAttribute("aria-label", txt);
+  h1.innerHTML = [...txt].map((c, i) => `<span class="ch" aria-hidden="true" style="--i:${i}">${esc(c)}</span>`).join("");
+
+  /* 3. muncul saat di-scroll */
+  const targets = document.querySelectorAll("section h2, section .lead, .about-grid p, .facts li, .member, .social-list li, .carousel");
+  const groups = new Map();
+  targets.forEach(el => {
+    const p = el.parentElement;
+    const n = groups.get(p) || 0; groups.set(p, n + 1);
+    el.classList.add("reveal");
+    el.style.setProperty("--d", Math.min(n % 4, 3) * 90 + "ms");
+  });
+  const io = new IntersectionObserver(es => es.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); }
+  }), { threshold: 0.15, rootMargin: "0px 0px -40px 0px" });
+  targets.forEach(el => io.observe(el));
+
+  /* 4. galeri jalan sendiri (berhenti jika disentuh) */
+  let lastTouch = 0, hovering = false, visible = false;
+  new IntersectionObserver(es => { visible = es[0].isIntersecting; }, { threshold: 0.4 }).observe(track);
+  const mark = () => { lastTouch = Date.now(); };
+  ["pointerdown","touchstart","keydown","wheel"].forEach(ev => track.addEventListener(ev, mark, { passive: true }));
+  prevBtn.addEventListener("click", mark); nextBtn.addEventListener("click", mark); dotsEl.addEventListener("click", mark);
+  track.addEventListener("pointerenter", e => { if (e.pointerType === "mouse") hovering = true; });
+  track.addEventListener("pointerleave", () => { hovering = false; });
+  setInterval(() => {
+    if (!visible || hovering || document.hidden || Date.now() - lastTouch < 5000) return;
+    goTo(active === shots.length - 1 ? 0 : active + 1);
+  }, 3500);
+}
+
+
+/* ============ HITUNG MUNDUR SEBELUM WEB DIBUKA ============ */
+let introStarted = false;
+function startIntro(){
+  if (introStarted) return; introStarted = true;
+  const root = document.documentElement, el = document.getElementById("intro");
+  if (!el) return;
+  if (INTRO_DETIK <= 0) { el.remove(); root.classList.remove("intro-on"); return; }
+  const num = document.getElementById("introNum"), bar = document.getElementById("introBar"), skip = document.getElementById("introSkip");
+  document.getElementById("introName").textContent = GROUP.name;
+  let left = INTRO_DETIK, timer, done = false;
+  num.textContent = left;
+  bar.style.transitionDuration = INTRO_DETIK + "s";
+  requestAnimationFrame(() => requestAnimationFrame(() => { bar.style.transform = "scaleX(1)"; }));
+  function finish(){
+    if (done) return; done = true;
+    clearInterval(timer);
+    el.classList.add("leave");
+    root.classList.remove("intro-on");
+    setTimeout(() => el.remove(), 800);
+  }
+  timer = setInterval(() => {
+    left--;
+    if (left <= 0) { finish(); return; }
+    num.textContent = left;
+    num.classList.remove("pop"); void num.offsetWidth; num.classList.add("pop");
+  }, 1000);
+  skip.addEventListener("click", finish);
+  skip.focus({ preventScroll: true });
+}
+
+
+/* ============ JADWAL BUKA WEB ============ */
+(async function(){
+  const openAt  = BUKA_PADA  ? Date.parse(BUKA_PADA)  : NaN;
+  const closeAt = TUTUP_PADA ? Date.parse(TUTUP_PADA) : NaN;
+  const hasOpen = !isNaN(openAt), hasClose = !isNaN(closeAt);
+  if (!hasOpen && !hasClose) { startIntro(); return; }
+
+  /* waktu acuan: jam server (header Date) supaya tidak bergantung jam perangkat; cadangan: jam perangkat */
+  let offset = 0;
+  try {
+    const c = new AbortController(), t = setTimeout(() => c.abort(), 1500);
+    const r = await fetch(location.href.split("#")[0], { method: "HEAD", cache: "no-store", signal: c.signal });
+    clearTimeout(t);
+    const d = r.headers.get("Date");
+    if (d && !isNaN(Date.parse(d))) offset = Date.parse(d) - Date.now();
+  } catch (e) {}
+  const now = () => Date.now() + offset;
+
+  const root = document.documentElement, gate = document.getElementById("gate");
+  const $ = id => document.getElementById(id);
+  document.getElementById("gateName").textContent = GROUP.name;
+  const fmt = ms => new Date(ms).toLocaleString("id-ID", { dateStyle: "full", timeStyle: "short", timeZone: "Asia/Jakarta" }) + " WIB";
+  const pad = n => String(n).padStart(2, "0");
+
+  let current = null;
+  function state(){
+    const t = now();
+    if (hasOpen && t < openAt) return "before";
+    if (hasClose && t >= closeAt) return "after";
+    return "open";
+  }
+  function apply(s){
+    if (s === "open") {
+      gate.hidden = true; root.classList.remove("locked");
+      startIntro();
+      return;
+    }
+    root.classList.add("locked"); gate.hidden = false;
+    if (s === "before") {
+      $("gateTitle").textContent = "Web belum dibuka";
+      $("gateWhen").textContent = "Dibuka pada " + fmt(openAt);
+      $("gateCount").hidden = false;
+      $("gateNote").textContent = "Halaman ini akan terbuka sendiri saat waktunya tiba. Kamu tidak perlu refresh.";
+    } else {
+      $("gateTitle").textContent = "Web sudah ditutup";
+      $("gateWhen").textContent = "Ditutup pada " + fmt(closeAt);
+      $("gateCount").hidden = true;
+      $("gateNote").textContent = "Terima kasih sudah berkunjung.";
+    }
+  }
+  function tick(){
+    const s = state();
+    if (s !== current) { current = s; apply(s); }
+    if (s === "before") {
+      let diff = Math.max(0, Math.floor((openAt - now()) / 1000));
+      const d = Math.floor(diff / 86400); diff -= d * 86400;
+      const h = Math.floor(diff / 3600);  diff -= h * 3600;
+      const m = Math.floor(diff / 60), sec = diff - m * 60;
+      $("gD").textContent = d; $("gH").textContent = pad(h); $("gM").textContent = pad(m); $("gS").textContent = pad(sec);
+    }
+  }
+  tick();
+  setInterval(tick, 500);
+})();

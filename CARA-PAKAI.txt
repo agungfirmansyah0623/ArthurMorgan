@@ -21,3 +21,35 @@ Cara memakai foto sendiri di galeri:
 
 Cara menaruh online: upload seluruh folder ini ke hosting statis
 (GitHub Pages, Netlify, Vercel, dll). Butuh internet hanya untuk font Google.
+
+ANIMASI
+- Foto di bagian atas melayang pelan, judul muncul huruf demi huruf.
+- Ada teks berjalan di bawah bagian atas (ubah isinya di GROUP.marquee pada script.js).
+- Bagian-bagian halaman muncul halus saat di-scroll.
+- Galeri jalan sendiri tiap 3,5 detik; berhenti jika disentuh atau kursor di atasnya.
+- Untuk mengatur kecepatan teks berjalan: ubah "26s" di style.css (.marquee-track).
+- Untuk kecepatan galeri: ubah angka 3500 di script.js (milidetik).
+- Animasi otomatis mati bagi pengguna yang mengaktifkan "kurangi gerakan" di perangkatnya.
+
+HITUNG MUNDUR SEBELUM WEB DIBUKA
+- Saat web dibuka, muncul layar biru dengan hitung mundur, lalu layar naik dan halaman tampil.
+- Lama hitung mundur: ubah angka INTRO_DETIK di baris pertama script.js (default 5 detik).
+  Isi 0 jika ingin mematikannya.
+- Pengunjung bisa menekan tombol "Lewati" untuk langsung masuk.
+
+JADWAL BUKA WEB
+- Atur di dua baris paling atas script.js:
+    BUKA_PADA  = "2026-09-27T08:00:00+07:00"   (web baru bisa dibuka mulai waktu ini)
+    TUTUP_PADA = ""                            (opsional, web tertutup setelah waktu ini)
+- Format: TAHUN-BULAN-TANGGAL, huruf T, JAM:MENIT:DETIK, lalu +07:00 untuk WIB
+  (WITA +08:00, WIT +09:00).
+- Sebelum waktunya, pengunjung melihat layar "Web belum dibuka" dengan hitung mundur.
+  Saat waktunya tiba, halaman terbuka sendiri lalu lanjut ke hitung mundur pembuka.
+- Kosongkan kedua baris ("") jika web ingin selalu bisa dibuka.
+- Untuk mencoba: isi BUKA_PADA dengan waktu 1-2 menit dari sekarang, lalu buka index.html.
+
+CATATAN KEAMANAN
+Pembatasan ini hanya di sisi tampilan. Orang yang paham teknis masih bisa melihat isi
+halaman lewat "View Source". Jadi cocok untuk mengatur waktu tayang, bukan untuk
+menyimpan rahasia. Jangan taruh data pribadi/rahasia di web ini.
+

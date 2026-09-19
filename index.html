@@ -7,8 +7,34 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add("js","intro-on");</script>
 </head>
 <body>
+<div class="gate" id="gate" role="dialog" aria-modal="true" aria-labelledby="gateTitle" hidden>
+  <div class="gate-box">
+    <p class="gate-name" id="gateName">Kelompok 7</p>
+    <h1 class="gate-title" id="gateTitle">Web belum dibuka</h1>
+    <p class="gate-when" id="gateWhen"></p>
+    <div class="gate-count" id="gateCount">
+      <div><b id="gD">0</b><span>hari</span></div>
+      <div><b id="gH">00</b><span>jam</span></div>
+      <div><b id="gM">00</b><span>menit</span></div>
+      <div><b id="gS">00</b><span>detik</span></div>
+    </div>
+    <p class="gate-note" id="gateNote">Halaman ini akan terbuka sendiri saat waktunya tiba. Kamu tidak perlu refresh.</p>
+  </div>
+</div>
+<div class="intro" id="intro" role="dialog" aria-modal="true" aria-label="Halaman sedang dibuka">
+  <div class="intro-box">
+    <p class="intro-name" id="introName">Kelompok 7</p>
+    <p class="intro-label">Halaman dibuka dalam</p>
+    <div class="intro-num" id="introNum" aria-hidden="true">5</div>
+    <p class="intro-label">detik</p>
+    <div class="intro-bar" aria-hidden="true"><span id="introBar"></span></div>
+    <button type="button" class="intro-skip" id="introSkip">Lewati</button>
+  </div>
+</div>
+
 
 <header class="top">
   <div class="wrap">
@@ -33,6 +59,8 @@
       <div class="stack" id="heroStack" aria-hidden="true"></div>
     </div>
   </div>
+
+  <div class="marquee" aria-hidden="true"><div class="marquee-track" id="marqueeTrack"></div></div>
 
   <section id="tentang">
     <div class="wrap about-grid">
