@@ -1,19 +1,19 @@
-
-/* ============ ISI HALAMAN: ubah bagian ini saja ============ */
-const BUKA_PADA  = "2026-09-21T08:00:00+07:00"; /* web baru bisa dibuka mulai waktu ini. Kosongkan ("") jika tidak dipakai */
+/* ===== JADWAL BUKA WEB (waktu WIB, format: TAHUN-BULAN-TANGGALTJAM:MENIT:DETIK+07:00) ===== */
+const BUKA_PADA  = "2026-09-19T08:00:00+07:00"; /* web baru bisa dibuka mulai waktu ini. Kosongkan ("") jika tidak dipakai */
 const TUTUP_PADA = "";                            /* opsional: web tertutup lagi setelah waktu ini. Contoh: "2026-09-27T17:00:00+07:00" */
-const INTRO_DETIK = 10; /* lama hitung mundur (detik). Isi 0 untuk mematikan */
+const INTRO_DETIK = 5; /* lama hitung mundur (detik). Isi 0 untuk mematikan */
 document.documentElement.classList.add("js");
+/* ============ ISI HALAMAN: ubah bagian ini saja ============ */
 const GROUP = {
   name: "Kelompok 7",
   marquee: ["Kelompok 7", "LKMM Unand",  "Hidup FTI", "Informatika", "Sistem Informasi", "Teknologi Komputer" ],
-  tagline: "GA SOMBONG GA AROGAN, ARTHUR MORGAN",
+  tagline: ["GA SOMBONG GA AROGAN, ARTHUR MORGAN"],
   about: [
     "Kami kelompok yang dibentuk untuk mengerjakan proyek bersama, dari ide awal sampai hasil akhir. Di halaman ini kamu bisa mengenal ANGGOTA, melihat dokumentasi kegiatan, dan mengikuti akun kami.",
     "Tulis di sini cerita singkat tentang bagaimana kelompok ini terbentuk, apa yang sedang dikerjakan, dan apa yang ingin dicapai."
   ],
   facts: [
-    ["Mentor", "UDA & UNI"]
+    ["Mentor", "UDA & UNI"],
     ["ANGGOTA", "16 orang"],
     ["Terbentuk", "2026"],
     ["Kegiatan", "KEGIATAN LKMM"],
@@ -51,6 +51,8 @@ const GROUP = {
   ],
   social: [
     { platform: "Instagram", handle: "@7.arthurmorgan", url: "https://www.instagram.com/7.arthurmorgan/?utm_source=ig_web_button_share_sheet" },
+    { platform: "Instagram", handle: "@mufa.by", url: "https://www.instagram.com/mufa.by_?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" },
+    { platform: "Instagram", handle: "@rayyasyaqinah", url: "https://www.instagram.com/rayyasyaqinah?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" },
   ]
 };
 /* ============================================================ */
@@ -70,7 +72,7 @@ function sceneArt(i, w, h){
 }
 function esc(s){ const d = document.createElement("div"); d.textContent = s; return d.innerHTML; }
 
-/* NAMA & tagline */
+/* nama & tagline */
 document.title = GROUP.name;
 ["brandName","heroName","footName"].forEach(id => document.getElementById(id).textContent = GROUP.name);
 document.getElementById("heroTagline").textContent = GROUP.tagline;
@@ -85,7 +87,7 @@ document.getElementById("heroStack").innerHTML = [0,2,4].map(i => {
 document.getElementById("aboutText").innerHTML = GROUP.about.map(t => `<p>${esc(t)}</p>`).join("");
 document.getElementById("facts").innerHTML = GROUP.facts.map(f => `<li><span>${esc(f[0])}</span><strong>${esc(f[1])}</strong></li>`).join("");
 
-/* ANGGOTA */
+/* anggota */
 document.getElementById("memberGrid").innerHTML = GROUP.members.map((m, i) => `
   <article class="member">
     <div class="initial" aria-hidden="true" style="background:${PALETTES[i % PALETTES.length][1]}">${esc(m.name.trim().charAt(0).toUpperCase())}</div>

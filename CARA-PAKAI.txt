@@ -53,3 +53,58 @@ Pembatasan ini hanya di sisi tampilan. Orang yang paham teknis masih bisa meliha
 halaman lewat "View Source". Jadi cocok untuk mengatur waktu tayang, bukan untuk
 menyimpan rahasia. Jangan taruh data pribadi/rahasia di web ini.
 
+
+/* ===== JADWAL BUKA WEB (waktu WIB, format: TAHUN-BULAN-TANGGALTJAM:MENIT:DETIK+07:00) ===== */
+const BUKA_PADA  = "2026-09-27T08:00:00+07:00"; /* web baru bisa dibuka mulai waktu ini. Kosongkan ("") jika tidak dipakai */
+const TUTUP_PADA = "";                            /* opsional: web tertutup lagi setelah waktu ini. Contoh: "2026-09-27T17:00:00+07:00" */
+const INTRO_DETIK = 5; /* lama hitung mundur (detik). Isi 0 untuk mematikan */
+document.documentElement.classList.add("js");
+/* ============ ISI HALAMAN: ubah bagian ini saja ============ */
+const GROUP = {
+  name: "Kelompok 7",
+  marquee: ["Kelompok 7", "LKMM Unand",  "Hidup FTI", "Informatika", "Sistem Informasi", "Teknologi Komputer" ],
+  tagline: "GA SOMBONG GA AROGAN, ARTHUR MORGAN",
+  about: [
+    "Kami kelompok yang dibentuk untuk mengerjakan proyek bersama, dari ide awal sampai hasil akhir. Di halaman ini kamu bisa mengenal ANGGOTA, melihat dokumentasi kegiatan, dan mengikuti akun kami.",
+    "Tulis di sini cerita singkat tentang bagaimana kelompok ini terbentuk, apa yang sedang dikerjakan, dan apa yang ingin dicapai."
+  ],
+  facts: [
+    ["Mentor", "UDA & UNI"]
+    ["ANGGOTA", "16 orang"],
+    ["Terbentuk", "2026"],
+    ["Kegiatan", "KEGIATAN LKMM"],
+    ["Asal", "UNIVERSITAS ANDALAS"]
+  ],
+  members: [
+    { name: "NAMA MENTOR  ", role: "MENTOR",  bio: "Tulis bio singkat di sini.", handle: "FADIL ABISALI" },
+    { name: "NAMA MENTOR  ", role: "MENTOR",  bio: "Tulis bio singkat di sini.", handle: "RAYYA" },
+    { name: "NAMA KETUA   ", role: "KETUA",   bio: "Tulis bio singkat di sini.", handle: "AGUNG FIRMANSYAH" },
+    { name: "NAMA PDD     ", role: "PDD",     bio: "Tulis bio singkat di sini.", handle: "NAILAHUSNA" },
+    { name: "NAMA PDD     ", role: "PDD",     bio: "Tulis bio singkat di sini.", handle: "SITI AZIZI RAHIMA" },
+    { name: "NAMA ANGGOTA ", role: "ANGGOTA", bio: "Tulis bio singkat di sini.", handle: "SABIRIL RAUF" },
+    { name: "NAMA ANGGOTA ", role: "ANGGOTA", bio: "Tulis bio singkat di sini.", handle: "HAVIS LUTFI" },
+    { name: "NAMA ANGGOTA ", role: "ANGGOTA", bio: "Tulis bio singkat di sini.", handle: "AFIF QASIM AL GHIFARI" },
+    { name: "NAMA ANGGOTA ", role: "ANGGOTA", bio: "Tulis bio singkat di sini.", handle: "M. FADLAN MALIK" },
+    { name: "NAMA ANGGOTA ", role: "ANGGOTA", bio: "Tulis bio singkat di sini.", handle: "NUR HAFIJA PANJAITAN" },
+    { name: "NAMA ANGGOTA ", role: "ANGGOTA", bio: "Tulis bio singkat di sini.", handle: "ADRYAN AKBAR" },
+    { name: "NAMA ANGGOTA ", role: "ANGGOTA", bio: "Tulis bio singkat di sini.", handle: "FAJRIL ATTHAR RAHMAN" },
+    { name: "NAMA ANGGOTA ", role: "ANGGOTA", bio: "Tulis bio singkat di sini.", handle: "AURA AULIA ZULFI" },
+    { name: "NAMA ANGGOTA ", role: "ANGGOTA", bio: "Tulis bio singkat di sini.", handle: "IBNU ZABDI AL FARUQI" },
+    { name: "NAMA ANGGOTA ", role: "ANGGOTA", bio: "Tulis bio singkat di sini.", handle: "ACHMAD LEDO KAUTSAR ERWINSYAH" },
+    { name: "NAMA ANGGOTA ", role: "ANGGOTA", bio: "Tulis bio singkat di sini.", handle: "ALEA DAGNA ANINDYA" },
+    { name: "NAMA ANGGOTA ", role: "ANGGOTA", bio: "Tulis bio singkat di sini.", handle: "ASIYAH SHAHIRA DELHAN" },
+    { name: "NAMA ANGGOTA ", role: "ANGGOTA", bio: "Tulis bio singkat di sini.", handle: "CLAUDYA ANNISA" },
+  ],
+  gallery: [
+    { cap: "Rapat pertama", w: 800, h: 600, photo: "foto/foto1.jpeg" },
+    { cap: "Kerja bareng", w: 800, h: 600, photo: "foto/foto2.jpeg" },
+    { cap: "Makan-makan", w: 800, h: 600, photo: "foto/foto3.jpeg" },
+    { cap: "Foto tim", w: 800, h: 600, photo: "foto/foto4.jpeg" },
+    { cap: "Presentasi", w: 800, h: 600, photo: "foto/foto_profil.png" },
+    { cap: "Survei lokasi", w: 800, h: 600, photo: "foto/foto5.jpeg" },
+    { cap: "Latihan", w: 800, h: 600, photo: "foto/foto6.jpeg" },
+    { cap: "Hari terakhir", w: 800, h: 600, photo: "foto/foto7.jpeg" }
+  ],
+  social: [
+    { platform: "Instagram", handle: "@7.arthurmorgan", url: "https://www.instagram.com/7.arthurmorgan/?utm_source=ig_web_button_share_sheet" },
+  ]
