@@ -1,0 +1,23 @@
+WEB KELOMPOK
+
+Isi folder:
+- index.html  : kerangka halaman (buka file ini di browser)
+- style.css   : semua tampilan (warna, huruf, tata letak)
+- script.js   : isi halaman + galeri geser
+
+Cara mengubah isi:
+1. Buka script.js dengan Notepad / VS Code.
+2. Di bagian paling atas ada blok GROUP. Ubah di situ:
+   - name, tagline, about, facts  -> nama, kalimat pembuka, tentang kelompok
+   - members                      -> 16 anggota (name, role, bio, handle)
+   - gallery                      -> daftar foto (cap = keterangan)
+   - social                       -> akun sosial media (url = link)
+3. Simpan, lalu buka / refresh index.html.
+
+Cara memakai foto sendiri di galeri:
+1. Buat folder bernama "foto" di dalam folder ini, isi dengan foto (mis. foto1.jpg).
+2. Di script.js pada bagian gallery, tambahkan photo, contoh:
+   { cap: "Rapat pertama", w: 800, h: 600, photo: "foto/foto1.jpg" }
+
+Cara menaruh online: upload seluruh folder ini ke hosting statis
+(GitHub Pages, Netlify, Vercel, dll). Butuh internet hanya untuk font Google.

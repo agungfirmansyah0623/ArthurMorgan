@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kelompok 7</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#atas" id="brandName">Kelompok 7</a>
+    <nav aria-label="Navigasi utama">
+      <a href="#tentang">Tentang</a>
+      <a href="#anggota">Anggota</a>
+      <a href="#galeri">Galeri</a>
+      <a href="#sosial">Sosial media</a>
+    </nav>
+  </div>
+</header>
+
+<main id="atas">
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <h1 id="heroName">Kelompok 7</h1>
+        <p id="heroTagline">Enam belas orang, satu tujuan. Ini tempat kami mengumpulkan cerita dan karya bersama.</p>
+        <a class="btn" href="#anggota">Kenalan dengan anggota</a>
+      </div>
+      <div class="stack" id="heroStack" aria-hidden="true"></div>
+    </div>
+  </div>
+
+  <section id="tentang">
+    <div class="wrap about-grid">
+      <div>
+        <h2>Tentang <mark>kelompok</mark></h2>
+        <div id="aboutText"></div>
+      </div>
+      <ul class="facts" id="facts"></ul>
+    </div>
+  </section>
+
+  <section id="anggota" class="members">
+    <div class="wrap">
+      <h2>Anggota</h2>
+      <p class="lead">Orang-orang di balik kelompok ini.</p>
+      <div class="member-grid" id="memberGrid"></div>
+    </div>
+  </section>
+
+  <section id="galeri">
+    <div class="wrap">
+      <h2>Galeri</h2>
+      <p class="lead">Geser foto ke kiri atau kanan, atau pakai tombol di bawah.</p>
+      <div class="carousel">
+        <div class="track" id="track" tabindex="0" role="region" aria-roledescription="carousel" aria-label="Galeri foto kegiatan"></div>
+        <div class="car-ctrl">
+          <div class="car-btns">
+            <button type="button" id="prevBtn" aria-label="Foto sebelumnya">Sebelumnya</button>
+            <button type="button" id="nextBtn" aria-label="Foto berikutnya">Berikutnya</button>
+          </div>
+          <div class="dots" id="dots"></div>
+          <span class="counter" id="counter" aria-live="polite"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sosial" class="social">
+    <div class="wrap">
+      <h2>Sosial media</h2>
+      <p class="lead">Ikuti kegiatan kami di sini.</p>
+      <ul class="social-list" id="socialList"></ul>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span id="footName">Kelompok 7</span>
+    <a href="#atas">Kembali ke atas</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
