@@ -1,13 +1,16 @@
 /* ============ ISI HALAMAN: ubah bagian ini saja ============ */
 const GROUP = {
   name: "Kelompok 7",
-  tagline: "GA SOMBONG GA AROGAN, ARTHUR MORGAN!!!",
+  tagline: [
+    "GA SOMBONG GA AROGAN",
+    "ARTHUR MORGAN!!!",
+  ],
   about: [
     "Kelompok ini dibentuk karena kegiatan LKMM yang ada di Fakultas Teknologi Informasi. Di halaman ini kamu bisa mengenal anggota, melihat dokumentasi kegiatan, dan mengikuti akun kami.",
     "Dengan segala keterbatasan kami selalu kompak dan aktif dalam berbagai kegiatan yang di adakan oleh acara LKMM tersebut, kami berharap LKMM ini membuat kami sebagai mahasiswa lebih percaya diri berbicara dan mengambil keputusan, lebih terampil mengatur waktu, tim, dan program kerja, serta lebih peduli pada lingkungan kampus dan masyarakat. Kami juga ingin membawa ilmu dari LKMM ke organisasi masing-masing, sehingga manfaatnya terasa lebih luas dan bertahan lama.."
   ],
   facts: [
-    ["MENTOR", "UDA & UNI"]
+    ["MENTOR", "UDA & UNI"],
     ["Anggota", "16 ORANG"],
     ["Terbentuk", "2026"],
     ["Kegiatan", "KELOMPOK 7 LKMM"],
@@ -35,14 +38,14 @@ const GROUP = {
   
   ],
   gallery: [
-     { cap: "KEGIATAN", w: 800, h: 600, photo: "foto/foto_profil.png" },
     { cap: "KEGIATAN", w: 800, h: 600, photo: "foto/foto1.jpeg" },
     { cap: "KEGIATAN", w: 800, h: 600, photo: "foto/foto2.jpeg" },
     { cap: "KEGIATAN", w: 800, h: 600, photo: "foto/foto3.jpeg" },
     { cap: "KEGIATAN", w: 800, h: 600, photo: "foto/foto4.jpeg" },
+    { cap: "KEGIATAN", w: 800, h: 600, photo: "foto/foto_profil.png" },
     { cap: "KEGIATAN", w: 800, h: 600, photo: "foto/foto5.jpeg" },
-    { cap: "KEGIATAN", w: 800, h: 600 },
-    { cap: "KEGIATAN", w: 800, h: 600 }
+    { cap: "KEGIATAN", w: 800, h: 600, photo: "foto/foto6.jpeg" },
+    { cap: "KEGIATAN", w: 800, h: 600, photo: "foto/foto7.jpeg" }
   ],
   social: [
     { platform: "Instagram", handle: "7.arthurmorgan", url: "https://www.instagram.com/7.arthurmorgan/?utm_source=ig_web_button_share_sheet" }
