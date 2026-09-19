@@ -1,50 +1,51 @@
 /* ============ ISI HALAMAN: ubah bagian ini saja ============ */
 const GROUP = {
   name: "Kelompok 7",
-  tagline: "Enam belas orang, satu tujuan. Ini tempat kami mengumpulkan cerita dan karya bersama.",
+  tagline: "GA SOMBONG GA AROGAN, ARTHUR MORGAN!!!",
   about: [
-    "Kami kelompok yang dibentuk untuk mengerjakan proyek bersama, dari ide awal sampai hasil akhir. Di halaman ini kamu bisa mengenal anggota, melihat dokumentasi kegiatan, dan mengikuti akun kami.",
-    "Tulis di sini cerita singkat tentang bagaimana kelompok ini terbentuk, apa yang sedang dikerjakan, dan apa yang ingin dicapai."
+    "Kelompok ini dibentuk karena kegiatan LKMM yang ada di Fakultas Teknologi Informasi. Di halaman ini kamu bisa mengenal anggota, melihat dokumentasi kegiatan, dan mengikuti akun kami.",
+    "Dengan segala keterbatasan kami selalu kompak dan aktif dalam berbagai kegiatan yang di adakan oleh acara LKMM tersebut, kami berharap LKMM ini membuat kami sebagai mahasiswa lebih percaya diri berbicara dan mengambil keputusan, lebih terampil mengatur waktu, tim, dan program kerja, serta lebih peduli pada lingkungan kampus dan masyarakat. Kami juga ingin membawa ilmu dari LKMM ke organisasi masing-masing, sehingga manfaatnya terasa lebih luas dan bertahan lama.."
   ],
   facts: [
-    ["Anggota", "16 orang"],
+    ["MENTOR", "UDA & UNI"]
+    ["Anggota", "16 ORANG"],
     ["Terbentuk", "2026"],
-    ["Kegiatan", "Proyek bersama"],
-    ["Asal", "Bukittinggi"]
+    ["Kegiatan", "KELOMPOK 7 LKMM"],
+    ["Asal", "  UNIVERSITAS ANDALAS"]
   ],
   members: [
-    { name: "Nama Anggota 1", role: "Ketua", bio: "Tulis bio singkat di sini.", handle: "@username1" },
-    { name: "Nama Anggota 2", role: "Wakil ketua", bio: "Tulis bio singkat di sini.", handle: "@username2" },
-    { name: "Nama Anggota 3", role: "Sekretaris", bio: "Tulis bio singkat di sini.", handle: "@username3" },
-    { name: "Nama Anggota 4", role: "Bendahara", bio: "Tulis bio singkat di sini.", handle: "@username4" },
-    { name: "Nama Anggota 5", role: "Desain & konten", bio: "Tulis bio singkat di sini.", handle: "@username5" },
-    { name: "Nama Anggota 6", role: "Dokumentasi", bio: "Tulis bio singkat di sini.", handle: "@username6" },
-    { name: "Nama Anggota 7", role: "Humas", bio: "Tulis bio singkat di sini.", handle: "@username7" },
-    { name: "Nama Anggota 8", role: "Humas", bio: "Tulis bio singkat di sini.", handle: "@username8" },
-    { name: "Nama Anggota 9", role: "Acara", bio: "Tulis bio singkat di sini.", handle: "@username9" },
-    { name: "Nama Anggota 10", role: "Acara", bio: "Tulis bio singkat di sini.", handle: "@username10" },
-    { name: "Nama Anggota 11", role: "Perlengkapan", bio: "Tulis bio singkat di sini.", handle: "@username11" },
-    { name: "Nama Anggota 12", role: "Perlengkapan", bio: "Tulis bio singkat di sini.", handle: "@username12" },
-    { name: "Nama Anggota 13", role: "Anggota", bio: "Tulis bio singkat di sini.", handle: "@username13" },
-    { name: "Nama Anggota 14", role: "Anggota", bio: "Tulis bio singkat di sini.", handle: "@username14" },
-    { name: "Nama Anggota 15", role: "Anggota", bio: "Tulis bio singkat di sini.", handle: "@username15" },
-    { name: "Nama Anggota 16", role: "Anggota", bio: "Tulis bio singkat di sini.", handle: "@username16" }
+    { name: "Nama Mentor ", role: "UDA", bio: "Tulis bio singkat di sini.", handle: "FADIL ABISALI" },
+    { name: "Nama Mentor ", role: "UNI", bio: "Tulis bio singkat di sini.", handle: "RAYYA" },
+    { name: "Nama Anggota ", role: "KETUA", bio: "Tulis bio singkat di sini.", handle: "AGUNG FIRMANSYAH" },
+    { name: "Nama Anggota ", role: "PDD", bio: "Tulis bio singkat di sini.", handle: "NAILAHUSNA" },
+    { name: "Nama Anggota ", role: "PDD", bio: "Tulis bio singkat di sini.", handle: "SITI AZIZI RAHIMA" },
+    { name: "Nama Anggota ", role: "ANGGOTA", bio: "Tulis bio singkat di sini.", handle: "SABIRIL RAUF" },
+    { name: "Nama Anggota ", role: "ANGGOTA", bio: "Tulis bio singkat di sini.", handle: "AFIF QASIM AL GHIFARI" },
+    { name: "Nama Anggota ", role: "ANGGOTA", bio: "Tulis bio singkat di sini.", handle: "M. FADLAN MALIK" },
+    { name: "Nama Anggota ", role: "ANGGOTA", bio: "Tulis bio singkat di sini.", handle: "NUR HAFIJA PANJAITAN" },
+    { name: "Nama Anggota ", role: "ANGGOTA", bio: "Tulis bio singkat di sini.", handle: "ADRYAN AKBAR" },
+    { name: "Nama Anggota ", role: "ANGGOTA", bio: "Tulis bio singkat di sini.", handle: "FAJRIL ATTHAR RAHMAN" },
+    { name: "Nama Anggota ", role: "ANGGOTA", bio: "Tulis bio singkat di sini.", handle: "AURA AULIA ZULFI" },
+    { name: "Nama Anggota ", role: "Anggota", bio: "Tulis bio singkat di sini.", handle: "IBNU ZABDI AL FARUQI" },
+    { name: "Nama Anggota ", role: "Anggota", bio: "Tulis bio singkat di sini.", handle: "ACHMAD LEDO KAUTSAR ERWINSYAH" },
+    { name: "Nama Anggota ", role: "Anggota", bio: "Tulis bio singkat di sini.", handle: "ALEA DAGNA ANINDYA" },
+    { name: "Nama Anggota ", role: "Anggota", bio: "Tulis bio singkat di sini.", handle: "ASIYAH SHAHIRA DELHAN" },
+    { name: "Nama Anggota ", role: "Anggota", bio: "Tulis bio singkat di sini.", handle: "HAVIS LUTFI" },
+    { name: "Nama Anggota ", role: "Anggota", bio: "Tulis bio singkat di sini.", handle: "CLAUDYA ANNISA" }
+  
   ],
   gallery: [
-    { cap: "Rapat pertama", w: 800, h: 600 },
-    { cap: "Kerja bareng", w: 800, h: 600 },
-    { cap: "Makan-makan", w: 800, h: 600 },
-    { cap: "Foto tim", w: 800, h: 600 },
-    { cap: "Presentasi", w: 800, h: 600 },
-    { cap: "Survei lokasi", w: 800, h: 600 },
-    { cap: "Latihan", w: 800, h: 600 },
-    { cap: "Hari terakhir", w: 800, h: 600 }
+    { cap: "KEGIATAN", w: 800, h: 600 },
+    { cap: "KEGIATAN", w: 800, h: 600 },
+    { cap: "KEGIATAN", w: 800, h: 600 },
+    { cap: "KEGIATAN", w: 800, h: 600 },
+    { cap: "KEGIATAN", w: 800, h: 600 },
+    { cap: "KEGIATAN", w: 800, h: 600 },
+    { cap: "KEGIATAN", w: 800, h: 600 },
+    { cap: "KEGIATAN", w: 800, h: 600 }
   ],
   social: [
-    { platform: "TikTok",    handle: "@_rifkii.f",      url: "https://www.tiktok.com/@_rifkii.f" },
-    { platform: "Instagram", handle: "@username_kelompok", url: "#" },
-    { platform: "YouTube",   handle: "Nama Kanal",      url: "#" },
-    { platform: "WhatsApp",  handle: "Grup / kontak",   url: "#" }
+    { platform: "Instagram", handle: "7.arthurmorgan", url: "https://www.instagram.com/7.arthurmorgan/?utm_source=ig_web_button_share_sheet" }
   ]
 };
 /* ============================================================ */
