@@ -1,5 +1,5 @@
 /* ===== JADWAL BUKA WEB (waktu WIB, format: TAHUN-BULAN-TANGGALTJAM:MENIT:DETIK+07:00) ===== */
-const BUKA_PADA  = "2026-09-22T08:00:00+07:00"; /* web baru bisa dibuka mulai waktu ini. Kosongkan ("") jika tidak dipakai */
+const BUKA_PADA  = "2026-09-21T08:00:00+07:00"; /* web baru bisa dibuka mulai waktu ini. Kosongkan ("") jika tidak dipakai */
 const TUTUP_PADA = "";                            /* opsional: web tertutup lagi setelah waktu ini. Contoh: "2026-09-27T17:00:00+07:00" */
 const INTRO_DETIK = 5; /* lama hitung mundur (detik). Isi 0 untuk mematikan */
 document.documentElement.classList.add("js");
