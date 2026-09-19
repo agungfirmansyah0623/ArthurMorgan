@@ -35,11 +35,11 @@ const GROUP = {
   
   ],
   gallery: [
-    { cap: "KEGIATAN", w: 800, h: 600 },
-    { cap: "KEGIATAN", w: 800, h: 600 },
-    { cap: "KEGIATAN", w: 800, h: 600 },
-    { cap: "KEGIATAN", w: 800, h: 600 },
-    { cap: "KEGIATAN", w: 800, h: 600 },
+    { cap: "KEGIATAN", w: 800, h: 600, photo: "foto/foto1.jpeg" },
+    { cap: "KEGIATAN", w: 800, h: 600, photo: "foto/foto2.jpeg" },
+    { cap: "KEGIATAN", w: 800, h: 600, photo: "foto/foto3.jpeg" },
+    { cap: "KEGIATAN", w: 800, h: 600, photo: "foto/foto4.jpeg" },
+    { cap: "KEGIATAN", w: 800, h: 600, photo: "foto/foto5.jpeg" },
     { cap: "KEGIATAN", w: 800, h: 600 },
     { cap: "KEGIATAN", w: 800, h: 600 },
     { cap: "KEGIATAN", w: 800, h: 600 }
