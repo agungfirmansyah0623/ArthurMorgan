@@ -108,3 +108,5 @@ const GROUP = {
   social: [
     { platform: "Instagram", handle: "@7.arthurmorgan", url: "https://www.instagram.com/7.arthurmorgan/?utm_source=ig_web_button_share_sheet" },
   ]
+
+{ platform: "Instagram", handle: " @", url: ""},

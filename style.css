@@ -86,8 +86,8 @@ mark{background:var(--yellow);color:#14163A;padding:0 .25em;border-radius:3px}
 .track{display:flex;gap:1.25rem;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;padding:.5rem .25rem 1rem;position:relative;scrollbar-width:none;cursor:grab;-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain}
 .track::-webkit-scrollbar{display:none}
 .track.dragging{scroll-snap-type:none;scroll-behavior:auto;cursor:grabbing}
-.slide{flex:0 0 min(82%,600px);scroll-snap-align:center;margin:0;border:2px solid var(--ink);border-radius:16px;overflow:hidden;background:var(--surface);box-shadow:5px 5px 0 var(--ink);user-select:none;-webkit-user-select:none}
-.slide img{width:100%;aspect-ratio:4/3;object-fit:cover;pointer-events:none}
+.slide{flex:0 0 min(82%,900px);scroll-snap-align:center;margin:0;border:2px solid var(--ink);border-radius:16px;overflow:hidden;background:var(--surface);box-shadow:5px 5px 0 var(--ink);user-select:none;-webkit-user-select:none}
+.slide img{width:100%;aspect-ratio:16/9;object-fit:cover;pointer-events:none}
 .slide figcaption{padding:.7rem 1rem;font-weight:600;border-top:2px solid var(--ink)}
 .slide[aria-current="true"] figcaption{background:var(--yellow);color:#14163A}
 .car-ctrl{display:flex;align-items:center;justify-content:space-between;gap:1rem;margin-top:1rem;flex-wrap:wrap}
@@ -180,8 +180,6 @@ html.intro-on{overflow:hidden}
   .intro,.intro-bar span{transition:none!important}
   .intro-num,.intro-num.pop{animation:none}
 }
-
-
 /* ===== JADWAL BUKA WEB (layar kunci) ===== */
 html.locked header.top,html.locked main,html.locked footer{display:none}
 .gate{position:fixed;inset:0;z-index:110;background:#14163A;color:#fff;display:grid;place-items:center;text-align:center;padding:2rem;overflow:auto}
@@ -195,3 +193,26 @@ html.locked header.top,html.locked main,html.locked footer{display:none}
 .gate-count b{display:block;font-family:var(--display);font-weight:800;font-size:clamp(1.8rem,7vw,3rem);line-height:1;font-variant-numeric:tabular-nums}
 .gate-count span{font-size:.9rem;font-weight:600}
 .gate-note{margin:0;font-size:.98rem;opacity:.8;max-width:40ch}
+
+/* ===== EFEK TEMBAKAN ===== */
+
+.fx{position:absolute;left:0;top:0;width:0;height:0;z-index:200;pointer-events:none}
+.fx>*{position:absolute;pointer-events:none}
+.fx-hole{transform:translate(-50%,-50%) rotate(var(--rot,0deg));line-height:0;filter:drop-shadow(3px 3px 0 rgba(20,22,58,.35));animation:holeIn .15s ease-out,holeOut .8s ease 5.4s forwards}
+.fx-hole svg{display:block}
+@keyframes holeIn{from{transform:translate(-50%,-50%) rotate(var(--rot,0deg)) scale(2);opacity:0}}
+@keyframes holeOut{to{opacity:0}}
+.fx-flash{width:80px;height:80px;border-radius:50%;background:radial-gradient(circle,#fff 0%,#FFD84D 35%,rgba(255,143,184,.7) 62%,transparent 74%);animation:flash .22s ease-out forwards}
+@keyframes flash{from{opacity:1;transform:translate(-50%,-50%) scale(.3)}to{opacity:0;transform:translate(-50%,-50%) scale(1.5)}}
+.fx-ring{width:30px;height:30px;border-radius:50%;border:3px solid #FF8FB8;box-shadow:0 0 0 2px #14163A;animation:ring .38s ease-out forwards}
+@keyframes ring{from{opacity:1;transform:translate(-50%,-50%) scale(.3)}to{opacity:0;transform:translate(-50%,-50%) scale(2.6)}}
+.fx-spark{width:8px;height:8px;border-radius:50%;background:var(--c,#FFD84D);border:1.5px solid #14163A;animation:spark .55s cubic-bezier(.1,.8,.3,1) forwards}
+@keyframes spark{from{transform:translate(-50%,-50%) scale(1);opacity:1}to{transform:translate(calc(-50% + var(--dx)),calc(-50% + var(--dy))) scale(.2);opacity:0}}
+
+/* ===== KURSOR (bidik = bawaan; pistol / biasa diatur lewat KURSOR di script.js) ===== */
+html:not(.kursor-pistol):not(.kursor-biasa),html:not(.kursor-pistol):not(.kursor-biasa) *{cursor:url("data:image/svg+xml,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20width=%2748%27%20height=%2748%27%20viewBox=%270%200%2048%2048%27%3E%3Cg%20fill=%27none%27%20stroke-linecap=%27round%27%3E%3Cg%20stroke=%27%2314163A%27%20stroke-width=%276%27%3E%3Ccircle%20cx=%2724%27%20cy=%2724%27%20r=%2714%27/%3E%3Cpath%20d=%27M24%203V13M24%2035V45M3%2024H13M35%2024H45%27/%3E%3C/g%3E%3Cg%20stroke=%27%23FFD84D%27%20stroke-width=%272.6%27%3E%3Ccircle%20cx=%2724%27%20cy=%2724%27%20r=%2714%27/%3E%3Cpath%20d=%27M24%203V13M24%2035V45M3%2024H13M35%2024H45%27/%3E%3C/g%3E%3C/g%3E%3Ccircle%20cx=%2724%27%20cy=%2724%27%20r=%273.2%27%20fill=%27%23FF8FB8%27%20stroke=%27%2314163A%27%20stroke-width=%271.8%27/%3E%3C/svg%3E") 24 24,crosshair!important}
+html.kursor-pistol,html.kursor-pistol *{cursor:url("data:image/svg+xml,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20width=%2740%27%20height=%2740%27%20viewBox=%270%200%2040%2040%27%3E%3Cpath%20d=%27M2%209H31V17H24L28%2036H20L17%2019H12L10%2017H2Z%27%20fill=%27%232b2f3a%27%20stroke=%27%23fff%27%20stroke-width=%271.6%27%20stroke-linejoin=%27round%27/%3E%3Crect%20x=%276%27%20y=%2711%27%20width=%2719%27%20height=%272%27%20fill=%27%23FFD84D%27/%3E%3Crect%20x=%273%27%20y=%276%27%20width=%273%27%20height=%273%27%20fill=%27%232b2f3a%27%20stroke=%27%23fff%27%20stroke-width=%271%27/%3E%3Cpath%20d=%27M12%2017Q13%2023%2019%2023%27%20fill=%27none%27%20stroke=%27%23fff%27%20stroke-width=%271.6%27%20stroke-linecap=%27round%27/%3E%3C/svg%3E") 2 10,crosshair!important}
+
+/* ===== KURSOR PISTOL ===== */
+html.pistol{--pistol:url("data:image/svg+xml,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20width=%2740%27%20height=%2740%27%20viewBox=%270%200%2040%2040%27%3E%3Cpath%20d=%27M2%209H31V17H24L28%2036H20L17%2019H12L10%2017H2Z%27%20fill=%27%232b2f3a%27%20stroke=%27%23fff%27%20stroke-width=%271.6%27%20stroke-linejoin=%27round%27/%3E%3Crect%20x=%276%27%20y=%2711%27%20width=%2719%27%20height=%272%27%20fill=%27%23FFD84D%27/%3E%3Crect%20x=%273%27%20y=%276%27%20width=%273%27%20height=%273%27%20fill=%27%232b2f3a%27%20stroke=%27%23fff%27%20stroke-width=%271%27/%3E%3Cpath%20d=%27M12%2017Q13%2023%2019%2023%27%20fill=%27none%27%20stroke=%27%23fff%27%20stroke-width=%271.6%27%20stroke-linecap=%27round%27/%3E%3C/svg%3E")}
+html.pistol,html.pistol *{cursor:var(--pistol) 2 10,crosshair!important}
