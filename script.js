@@ -7,7 +7,7 @@ document.documentElement.classList.add("js");
 const GROUP = {
   name: "Kelompok 7" ,
   marquee: ["Kelompok 7", "LKMM Unand",  "Hidup FTI", "Informatika", "Sistem Informasi", "Teknologi Komputer" ],
-  tagline: ["GA SOMBONG GA AROGAN, DAY 1"],
+  tagline: ["GA SOMBONG GA AROGAN, ARTHUR MORGAN"],
   about: [
     "Kelompok ini dibentuk dalam melaksanakan kegiatan LKMM, DAY 1 adalah salah satu kelompok peserta LKMM (Latihan Keterampilan Manajemen Mahasiswa) Universitas Andalas. Kami terdiri dari 16 mahasiswa dengan latar belakang, jurusan, dan pengalaman organisasi yang berbeda, yang dipertemukan untuk belajar kepemimpinan dan manajemen organisasi secara langsung.Selama LKMM, kami berdiskusi, mengerjakan tugas, dan menjalankan kegiatan bersama. Di situ kami belajar mendengarkan, membagi peran, mengambil keputusan, dan bertanggung jawab atas hasil kerja tim. Bagi kami, kepemimpinan bukan soal jabatan, tetapi soal kemauan untuk belajar dan bergerak bersama. Halaman ini kami buat sebagai tempat menyimpan perkenalan anggota, dokumentasi kegiatan, dan cerita selama mengikuti LKMM Unand.",
   ],
