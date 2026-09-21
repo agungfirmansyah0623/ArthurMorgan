@@ -466,3 +466,5 @@ const SUARA_FILE     = "";      /* opsional: file rekaman asli, contoh "suara/ea
     if (daftarLubang.length > 25) daftarLubang.shift().remove();
   });
 })();
+
+test
